@@ -1,0 +1,60 @@
+playlists{
+    id,
+    name,
+    lenght,
+    user_id,
+    created_at,
+    updated_at,
+    deleted_at,
+}
+//
+// ─── TABLA CONECTORA ────────────────────────────────────────────────────────────
+//
+playlist_song{
+    id,
+    playlist_id,
+    song_id,
+}
+// ────────────────────────────────────────────────────────────────────────────────
+
+songs{
+    id,
+    title,
+    lenght,
+    album_id,
+}
+
+albums{
+    id,
+    title,
+    cover,
+    interpreter,
+    lenght,
+    year,
+}
+
+artists{
+    id,
+    full_name,
+}
+
+users{
+    id,
+    name,
+    last_name,
+    email,
+    password,
+    birthday,
+    avatar,
+    created_at,
+    activated_at,
+    updated_at,
+    deleted_at,
+}
+
+likes{
+    id,
+    user_id,
+    table_name,
+    table_id,
+}
